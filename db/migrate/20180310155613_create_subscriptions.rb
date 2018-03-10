@@ -1,8 +1,10 @@
 class CreateSubscriptions < ActiveRecord::Migration
   def change
     create_table :subscriptions do |t|
-
-      t.timestamps null: false
+      t.string :title
+      t.integer :sum
+      t.text :memo
+      t.timestamps
     end
   end
 end
